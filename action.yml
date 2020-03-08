@@ -1,0 +1,13 @@
+name: 'Action Dogs'
+description: 'Doggoes GIFs delivered into PRs'
+author: 'Stanley Nguyen'
+branding:
+  icon: 'camera-off'  
+  color: 'yellow'
+inputs:
+  github-token:
+    description: 'Pass in secrets.GITHUB_TOKEN'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
