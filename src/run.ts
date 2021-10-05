@@ -12,10 +12,11 @@ import { generate } from './doggo/generator'
     const doggo = generate()
     ghCli.issues.createComment({
       ...ctx.repo,
-      issue_number: ctx.payload.pull_request.number, // eslint-disable-line @typescript-eslint/camelcase
+      issue_number: ctx.payload.pull_request.number,
       body: `![Doggo](${doggo})`
     })
-  } catch (e) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } catch (e: any) {
     core.setFailed(e.message)
   }
 })()
