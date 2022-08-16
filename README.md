@@ -9,6 +9,8 @@
 
 # action-dogs
 
+Made some changes
+
 🐶🐕🦮🐕‍🦺🐩🌭 dogs-as-a-github-action
 
 It's impossible to think of anything better than a doggo gif after a long implementation.
